@@ -1,0 +1,17 @@
+### Variáveis
+@URL_API = http://localhost:3000
+
+### GET na raiz da API
+GET {{URL_API}}
+
+### POST no produtos
+POST {{URL_API}}/produtos
+Content-Type: application/json
+
+{
+    "nome": "Arroz",
+    "preco": 123
+}
+
+### GET no produto de id 10
+GET {{URL_API}}/produtos/10
