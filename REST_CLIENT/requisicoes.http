@@ -10,8 +10,10 @@ Content-Type: application/json
 
 {
     "nome": "Arroz",
-    "preco": 123
+    "preco": 123,
+    "email": "a@email.com"
 }
 
 ### GET no produto de id 10
 GET {{URL_API}}/produtos/10
+

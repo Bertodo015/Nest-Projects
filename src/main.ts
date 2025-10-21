@@ -7,7 +7,10 @@ async function bootstrap() {
 
   //validadores globais que requerem class-validator e class-tra
   //usamos no formato decorator
-  api.useGlobalPipes(new ValidationPipe)
+  api.useGlobalPipes(new ValidationPipe({
+    whitelist: true,
+    forbidNonWhitelisted: true
+  }));
 
   await api.listen(process.env.PORT ?? 3000);
 }

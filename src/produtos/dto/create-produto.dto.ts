@@ -9,4 +9,7 @@ export class CreateProdutoDto {
     @IsNumber()
     @IsNotEmpty()
     preco: number;
+
+    @IsString()
+    email: string;
 }

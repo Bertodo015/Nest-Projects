@@ -1,9 +1,19 @@
+import { Exclude } from "class-transformer";
+import { ObjectId } from "mongodb";
+import { Column, CreateDateColumn, Entity, ObjectIdColumn } from "typeorm";
+
+@Entity()
 export class Produto {
-    //não pode ser vazio
+    @ObjectIdColumn({ name: '_id' })
+    @Exclude()
+    _id: ObjectId;
+
+    @Column('text')
     nome: string;
 
-    //tem que ser número
+    @Column('float')
     preco: number;
 
+    @CreateDateColumn()
     create_at: Date;
 }
