@@ -1,12 +1,11 @@
 import { Exclude } from "class-transformer";
 import { ObjectId } from "mongodb";
-import { Column, CreateDateColumn, Entity, ObjectIdColumn } from "typeorm";
+import { Column, CreateDateColumn, Entity, ObjectIdColumn, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Produto {
-    @ObjectIdColumn({ name: '_id' })
-    @Exclude()
-    _id: ObjectId;
+    @ObjectIdColumn()
+    _id: string;
 
     @Column('text')
     nome: string;

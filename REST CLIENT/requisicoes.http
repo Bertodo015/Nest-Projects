@@ -1,0 +1,56 @@
+### Variáveis
+@URL_API = http://localhost:3000
+
+### GET na raiz da API
+GET {{URL_API}}
+
+### POST no produtos
+POST {{URL_API}}/produtos
+Content-Type: application/json
+
+{
+    "nome": "Farinha",
+    "preco": 10.8
+}
+
+### GET nos produtos
+GET {{URL_API}}/produtos
+
+### GET no produto de id 100
+GET {{URL_API}}/produtos/6912ad3a9935acd00bdba1b0
+
+### GET no produto de id 100
+GET {{URL_API}}/produtos/nome/Arroz
+
+### PATCH no produtos
+PATCH {{URL_API}}/produtos/6912ad3a9935acd00bdba1b0
+Content-Type: application/json
+
+{
+    "nome": "Farinha",
+    "preco": 10.5 
+}
+
+
+### DELETE no produto de id 100
+DELETE {{URL_API}}/produtos/6912ad3a9935acd00bdba1b0
+
+
+### POST no usuarios
+POST {{URL_API}}/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Ygo",
+    "email": "23",
+    "senha": "123456"
+}
+
+### POST no usuarios/login
+POST {{URL_API}}/usuarios/login
+Content-Type: application/json
+
+{
+    "email": "a@a.com",
+    "senha": "123456"
+}
