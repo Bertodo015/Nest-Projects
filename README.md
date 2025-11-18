@@ -1,16 +1,21 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+## Instalando NestJS globalmente na máquina
+npm i -g @nestjs/cli
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Criando projeto NestJS chamado meu-projeto
+nest new meu-projeto
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
+## Instalando extensão REST Client no VSCode
+Buscar pela extensão humao.rest-client e instalar
 
-## Description
+## Para gerar um CRUD completo de produtos
+nest generate resource produtos
+OU
+nest g res produtos
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Para validar utilizando decorators
+npm i class-validator class-transformer
+E
+importar no main.ts
 
 ## Project setup
 
@@ -29,52 +34,4 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
-
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
-
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
-
-## Instalando as depencências do Config do NestJS
-```
-npm i --save @nestjs/config
-```
-
-
-## Instalando o TypeORM para trabalhar com MongoDB
-````
-npm install --save @nestjs/typeorm typeorm @types/mongodb mongodb
 ```
